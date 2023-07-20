@@ -223,11 +223,16 @@ const PresidenASList = [
     "Joe Biden",
   ],
 ];
-for (let i = 0; i < PresidenASList.length; i++) {
-  const row = PresidenASList[i];
-  console.log(`HeroList #${i + 1}`);
-  for (let j = 0; j < row.length; j++) {
-    alert(`   ${row[j]}`);
+// for (let i = 0; i < PresidenASList.length; i++) {
+//   const row = PresidenASList[i];
+//   console.log(`HeroList #${i + 1}`);
+//   for (let j = 0; j < row.length; j++) {
+//     alert(`   ${row[j]}`);
+//   }
+// }
+for (let row of PresidenASList) {
+  for (let Presiden of row) {
+    alert(Presiden);
   }
 }
 const PresidenAS = "Barack Obama";
